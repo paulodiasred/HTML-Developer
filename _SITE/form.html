@@ -6,11 +6,33 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form name="signup" onsubmit="alert('Enviei o formulario')" autocomplete="on" method="post" action="#">
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option selected value="">Selecione o cargo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br>
+        <label>Assunto:</label><input type="text" name="subject"><br>
+        <textarea name="message"></textarea>
+        <button type="submit">Enviar</button>
+        
+    </form>
+    <!-- <form name="signup" onsubmit="alert('Enviei o formulario')" autocomplete="on" method="post" action="#">
         Nome: <input type="text" name="name" /><br>
         Idade: <input type="number" name="age" /><br>
         Senha: <input type="password" name="password" /><br>
-        <button type="submit">Enviar</button>
-    </form>
+        Range: <input type="range" min="0" max="100" value="90"/><br>
+        Color: <input type="color"/><br>
+        E-mail: <input type="email"/><br>
+        URL: <input type="url"/><br>
+        Data: <input type="date"/><br>
+        Checkbox: <input type="checkbox" name="opcional[]"/><br>
+        Radio: <input type="radio"/>
+        <button type="submit">Enviar</button><br>
+    </form> -->
 </body>
 </html>
