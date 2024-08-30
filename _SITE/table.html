@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            -webkit-box-shadow: 13px 9px 17px 4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 13px 9px 17px 4px rgba(0,0,0,0.75);
+            box-shadow: 13px 9px 17px 4px rgba(0,0,0,0.75);
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        table tfoot td {
+            background-color: gray;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: rgb(202, 202, 202);
+        }
+        table tbody tr:hover td {
+            background-color: rgb(117, 117, 117);
+            cursor: pointer;
+        }
+        table {
+            border: dashed 1px black;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Tabela de usuarios" width="250" cellspacing="0" cellpadding="5" align="center">
+        <thead>
+            <!-- <caption>Teste</caption> -->
+            <tr>
+                <th colspan="2">Minha Tabela</th>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- tr linha da tabela -->
+            <tr id="1">
+                <td>Diogo</td>
+                <td>30</td>
+            </tr>
+            <tr id="2">
+                <td>Thassia</td>
+                <td>26</td>
+            </tr>
+            <tr id="3">
+                <td>Paulo</td>
+                <td>37</td>
+            </tr>
+            <tr id="4">
+                <td>Laion</td>
+                <td>12</td>
+            </tr>
+            <tr id="5">
+                <td>Enzoninho</td>
+                <td>13</td>
+            </tr>
+            <tr id="6">
+                <td>Daulo</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="7">
+                <td>Total</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
