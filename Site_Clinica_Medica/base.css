@@ -1,52 +1,82 @@
-html, body {
-    margin: 0;
-}
 body {
-    background-color: #f1f1f1;
+    background-color: rgb(180, 194, 207);
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Mantém o conteúdo centralizado na tela */
+    margin: 0;
 }
 
 .wrapper {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza a wrapper na página */
     display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+    padding: 0;
 }
+
+.menu {
+    width: 15%;
+    background-color: rgb(180, 194, 207);
+    padding: 1%; /* Ajusta o padding para evitar espaçamentos desnecessários */
+    margin: 0;
+    background-image: url('imagens_site/footer-menu.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
 .main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
-.menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+
+ul {
+    width: 100%;
+    list-style: none;
 }
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+    padding: 20% 4%;
+    display: flex;
+}
+
 .header {
     width: 100%;
-    height: 295;
+    height: auto;
+    max-height: 300px;
 }
+
 .header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .content {
     background-color: #f0f0f0;
     min-height: 150px;
     padding: 20px;
 }
+
 .footer {
     background-image: url('imagens_site/footer.png');
-    background-size: cover; /* Ajusta a imagem para cobrir todo o footer */
-    background-position: center; /* Centraliza a imagem no footer */
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-    color: rgb(0, 0, 0); /* Altera a cor do texto para garantir legibilidade */
-    display: flex; /* Usa flexbox para as divisões */
-    justify-content: space-between; /* Espalha as divisões uniformemente */
-  }
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-section {
-    flex: 2; /* Faz com que cada seção ocupe o mesmo espaço */
+    flex: 2;
     padding: 10px;
 }
